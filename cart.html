@@ -32,7 +32,58 @@
     </header>
     
     <main class='flex-column flex-center padding-xxlg'>
-    
+        <p class='text-capital font-size-lg margin-btm-md'>my cart</p>
+        <section class='flex-center'>
+            <article class='card-wrapper margin-top-lg card-shadow-sm border-radius-sm  margin-right-xxlg'>
+                <main class='flex-row border-top-radius-sm'>
+                    <img src='https://picsum.photos/400/300' class='card-image border-top-left-radius-sm card-horizontal-image' />
+                    <header class='padding-xxlg'>
+                        <p class='font-size-md text-capital text-bold letter-space-md card-heading-black'>Rs. 3000</p>
+                        <p class='font-size-sm text-capital letter-space-sm margin-top-sm card-subheading-black'>50% off</p>
+                        <div class='flex-horizontal-start flex-vertical-center'>
+                            <p class='font-size-sm text-capital letter-space-sm margin-top-sm card-subheading-black margin-right-md'>quantity: </p>
+                            <button class='btn-outlined padding-md border-radius-circle margin-right-md'>-</button>
+                            <input type='number' class='margin-right-md' placeholder='1' />
+                            <button class='btn-filled padding-md border-radius-circle'>+</button>
+                        </div>
+                    </header>
+                </main>
+                <footer class='margin-top-md flex-column margin-horizontal-xxlg'>
+                    <button class='btn-filled text-capital padding-lg margin-btm-sm border-radius-sm'>remove from cart</button>
+                    <button class='btn-outlined text-capital padding-lg margin-btm-md border-radius-sm'>move to wishlist</button>
+                </footer>
+            </article>
+
+            <article class='card-wrapper margin-top-lg card-shadow-sm border-radius-sm padding-xxlg'>
+                <main class='flex-column border-top-radius-sm'>
+                    <p class='font-size-md text-uppercase text-bold letter-space-md card-heading-black margin-btm-lg'>
+                        price details
+                    </p>
+                    <div class='flex-horizontal-stretch text-capital font-size-md letter-space-sm margin-btm-sm'>
+                        <p>price</p>
+                        <p>Rs4999</p>
+                    </div>
+                    <div class='flex-horizontal-stretch text-capital font-size-md letter-space-sm margin-btm-sm'>
+                        <p>discount</p>
+                        <p>-Rs. 500</p>
+                    </div>
+                    <div class='flex-horizontal-stretch text-capital font-size-md letter-space-sm margin-btm-lg'>
+                        <p>delivery charges</p>
+                        <p>Rs500</p>
+                    </div>
+                    <div class='font-size-md text-uppercase text-bold flex-horizontal-stretch text-capital font-size-md letter-space-sm margin-btm-sm'>
+                        <p>total amount</p>
+                        <p>Rs.4999</p>
+                    </div>
+                        
+                </main>
+                <footer class='margin-top-md flex-column margin-horizontal-xxlg'>
+                    <p></p>
+                    <button class='btn-filled text-uppercase padding-lg border-radius-sm'>place order</button>
+                </footer>
+            </article>
+
+        </section>
     </main>
 </body>
 </html>

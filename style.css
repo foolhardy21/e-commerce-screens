@@ -1,0 +1,11 @@
+section {
+    flex-wrap: wrap;
+}
+
+article {
+    height: max-content;
+}
+
+input[type='number'] {
+    width: 3rem;
+}
