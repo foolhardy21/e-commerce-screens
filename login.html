@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
     <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css' />
     <link rel='stylesheet' href='./style.css' />
     <title>Login Page</title>
 </head>
 <body>
-    <h1>login</h1>
+    
+    <header class='flex-horizontal-stretch flex-vertical-center padding-md'>
+        <span>website</span>
+        <div class='flex-vertical-center'>
+            <span class='material-icons'>
+                search
+            </span>
+            <input type='text' placeholder='Search' />
+        </div>
+        <nav class='flex-vertical-center'>
+            <button class='btn-filled padding-sm margin-right-xxlg'>login</button>
+            <span class='material-icons margin-right-xxlg'>
+                favorite_border
+            </span>
+            <span class='material-icons margin-right-xxlg'>
+                shopping_cart
+            </span>
+        </nav>
+    </header>
+
+    <main class='flex-center'>
+        
+        <section class='flex-column padding-xxlg margin-top-xlg flex-center border-radius-sm'>
+            <p class='text-capital font-size-lg text-bold letter-space-md margin-btm-md'>
+                login
+            </p>
+            <form class='flex-column margin-horizontal-xxlg'>
+                <label for="email-input" class='text-capital margin-top-md'>email address</label>
+                <input type='email' id='email-input' />
+                <label for='pass-input' class='text-capital margin-top-md'>password</label>
+                <input type='password' id='pass-input' />
+                <div class='flex-horizontal-stretch flex-vertical-center margin-top-md'>
+                    <div class='flex-vertical-center'>
+                        <input type='radio' id='terms-check' />
+                        <label for='terms-check' class='text-capital margin-left-sm'>remember me</label>
+                    </div>
+                    <button class='btn-text flex-center text-capital padding-md margin-left-md letter-space-sm'>
+                        forgot your password?
+                    </button>
+                </div>
+                <button class='btn-filled text-capital padding-md letter-space-sm margin-top-md'>create new account</button>
+                <button class='btn-text flex-center text-capital padding-md letter-space-sm margin-top-md'>
+                    already have an account
+                    <span class='material-icons'>
+                        chevron_right
+                    </span>
+                </button>
+            </form>
+        </section>
+    
+    </main>
 </body>
 </html>
