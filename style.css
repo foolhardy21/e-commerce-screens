@@ -9,6 +9,7 @@ body {
     "aside main main"
     "aside main main";
     grid-template-columns: 15rem 1fr 1fr;
+    row-gap: 1rem;
 }
 
 header {
@@ -21,5 +22,13 @@ aside {
 
 main {
     grid-area: main;
-    /* background: lightcyan; */
 }
+
+section {
+    flex-flow: row wrap;
+}
+
+.add-btn {
+    width: 100%;
+}
+
