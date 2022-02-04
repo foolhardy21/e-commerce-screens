@@ -10,6 +10,68 @@
     <title>Filters</title>
 </head>
 <body>
-    
+
+    <aside class='card-shadow-sm margin-top-md margin-left-md padding-xxlg border-radius-sm'>
+        
+        <div class='flex-horizontal-stretch margin-btm-md'>
+            <p class='font-size-md text-bold text-capital letter-space-md card-heading-black'>
+                filters
+            </p>
+            <button class='btn-text text-capital padding-sm border-radius-sm'>
+                clear
+            </button>
+        </div>
+        
+        <div class='margin-btm-md'>
+            <p class='font-size-md text-bold text-capital letter-space-md card-heading-black margin-btm-sm'>price</p>
+            <input type='range' min='50' max='200' value='50' />
+        </div>
+        
+        <div class='margin-btm-md flex-column'>
+                <p class='font-size-md text-bold text-capital letter-space-md card-heading-black margin-btm-sm'>category</p>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input class='margin-right-md' type='checkbox' id='men-category' />
+                    <label for='men-category' class='text-capital'>men category</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input class='margin-right-md' type='checkbox' id='women-category' />
+                    <label for='women-category' class='text-capital'>women category</label>
+                </div>
+        </div>
+        
+        <div class='margin-btm-md flex-column'>
+            <p class='font-size-md text-bold text-capital letter-space-md card-heading-black margin-btm-sm'>rating</p>
+            <div class='flex-vertical-center margin-btm-sm'>
+                <input type='radio' id='4-atleast' class='margin-right-md' />
+                <label for='4-atleast'>4 stars and above</label>
+            </div>
+            <div class='flex-vertical-center margin-btm-sm'>
+                <input type='radio' class='margin-right-md' id='3-atleast' />
+                <label for='4-atleast'>3 stars and above</label>
+            </div>
+            <div class='flex-vertical-center margin-btm-sm'>
+                <input type='radio' class='margin-right-md' id='2-atleast' />
+                <label for='4-atleast'>2 stars and above</label>
+            </div>
+            <div class='flex-vertical-center margin-btm-sm'>
+                <input type='radio' class='margin-right-md' id='1-atleast' />
+                <label for='4-atleast'>1 stars and above</label>
+            </div>
+        </div>
+
+        <div class='margin-btm-md flex-column'>
+            <p class='font-size-md text-bold text-capital letter-space-md card-heading-black margin-btm-sm'>
+                sort by
+            </p>
+            <div class='flex-vertical-center margin-btm-sm'>
+                <input type='radio' id='price-asc' class='margin-right-md' />
+                <label for='price-asc' class='text-capital'>price low to high</label>
+            </div>
+            <div class='flex-vertical-center margin-btm-sm'>
+                <input type='radio' id='price-desc' class='margin-right-md' />
+                <label for='price-desc' class='text-capital'>price high to low</label>
+            </div>
+        </div>
+    </aside>
 </body>
 </html>

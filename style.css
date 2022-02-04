@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    width: 15rem;
+}
+
+input[type='range'] {
+    width: 80%;
+}
