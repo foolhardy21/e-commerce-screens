@@ -25,10 +25,29 @@ main {
 }
 
 section {
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .add-btn {
     width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr;
+    }
 }
 
