@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+    "aside main main"
+    "aside main main";
+    grid-template-columns: 15rem 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+    /* background: lightcyan; */
+}
