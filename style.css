@@ -4,12 +4,17 @@
 }
 
 header {
-    background : var(--c-lightblue);
+    background : var(--c-black);
 }
 
-nav {
-    background: lightgreen;
+.search-bar {
+    background-color: var(--c-white);
 }
+
+.search-bar > input {
+    width: 15rem;
+}
+
 
 main {
 
