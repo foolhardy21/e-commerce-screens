@@ -12,17 +12,12 @@ header {
 }
 
 .search-bar > input {
-    width: 15rem;
-}
-
-
-main {
-
+    width: 5rem;
 }
 
 section {
-    min-width: 20rem;
+    width: 25rem;
     box-shadow: 0 0 4px -2px;
-    max-width: fit-content;
+    /* max-width: fit-content; */
 }
 

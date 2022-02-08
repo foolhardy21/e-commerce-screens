@@ -40,21 +40,29 @@
 
     <main class='flex-center'>
         
-        <section class='flex-column padding-xxlg margin-top-xlg flex-center border-radius-sm'>
-            <p class='text-capital font-size-lg text-bold letter-space-md margin-btm-md'>
+        <section class='flex-column padding-xxlg margin-top-xlg flex-center'>
+            <p class='text-capital font-size-lg letter-space-md margin-btm-md'>
                 signup
             </p>
             <form class='flex-column margin-horizontal-xxlg'>
-                <label for="email-input" class='text-capital margin-top-md'>email address</label>
-                <input type='email' id='email-input' />
-                <label for='pass-input' class='text-capital margin-top-md'>password</label>
-                <input type='password' id='pass-input' />
-                <div class='flex-horizontal-start flex-vertical-center margin-top-md'>
+                <label for="email-input" class='text-capital margin-top-md c-black'>
+                    email address
+                </label>
+                <input type='email' id='email-input' class="padding-sm border-thin no-outline margin-top-sm" />
+                <label for='pass-input' class='text-capital margin-top-md c-black'>
+                    password
+                </label>
+                <input type='password' id='pass-input' class="'margin-top-sm no-outline padding-sm border-thin" />
+                <div class='flex-horizontal-start flex-vertical-center margin-top-md margin-btm-lg c-darkgray'>
                     <input type='radio' id='terms-check' />
-                    <label for='terms-check' class='text-capital margin-left-md'>i accept all terms & conditions</label>
+                    <label for='terms-check' class='text-capital margin-left-sm'>
+                        i accept all terms & conditions
+                    </label>
                 </div>
-                <button class='btn-filled text-capital padding-md letter-space-sm margin-top-md'>create new account</button>
-                <button class='btn-text flex-center text-capital padding-md letter-space-sm margin-top-md'>
+                <button class='btn-filled c-white no-border letter-space-md font-size-md text-capital padding-md letter-space-sm margin-top-lg'>
+                    create new account
+                </button>
+                <button class='btn-text c-blue container-transparent no-border font-size-md flex-center text-capital padding-md letter-space-sm margin-top-md'>
                     already have an account
                     <span class='material-icons'>
                         chevron_right
