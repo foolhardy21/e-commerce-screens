@@ -29,6 +29,8 @@
 
 .cart-item-image {
     width: 35%;
+    max-width: 305px;
+    max-height: 305px;
 }
 
 input[type='number'] {
