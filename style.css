@@ -1,3 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#page-header {
+    background : var(--c-black);
+}
+
+.search-bar {
+    background-color: var(--c-white);
+}
+
+.search-bar > input {
+    width: 10rem;
+}
+
 section {
     flex-wrap: wrap;
 }
