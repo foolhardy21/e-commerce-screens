@@ -49,11 +49,29 @@
                     email address
                 </label>
                 <input type='email' id='email-input' class="padding-sm border-thin no-outline margin-top-sm" />
+                <label for="fname-input" class='text-capital margin-top-md c-black'>
+                    first name
+                </label>
+                <input type='text' id='fname-input' class="padding-sm border-thin no-outline margin-top-sm" />
+                <label for="lname-input" class='text-capital margin-top-md c-black'>
+                    last name
+                </label>
+                <input type='text' id='lname-input' class="padding-sm border-thin no-outline margin-top-sm" />
                 <label for='pass-input' class='text-capital margin-top-md c-black'>
                     password
                 </label>
                 <input type='password' id='pass-input' class="'margin-top-sm no-outline padding-sm border-thin" />
-                <div class='flex-horizontal-start flex-vertical-center margin-top-md margin-btm-lg c-darkgray'>
+                <label for='cpass-input' class='text-capital margin-top-md c-black'>
+                    confirm password
+                </label>
+                <input type='password' id='cpass-input' class="'margin-top-sm no-outline padding-sm border-thin" />
+                <div class='flex-horizontal-end flex-vertical-center margin-top-md margin-btm-sm c-darkgray'>
+                    <input type='checkbox' id='toggle-pass' />
+                    <label for='toggle-pass' class='text-capital margin-left-sm'>
+                        show password
+                    </label>
+                </div>
+                <div class='flex-horizontal-start flex-vertical-center margin-top-sm margin-btm-lg c-darkgray'>
                     <input type='radio' id='terms-check' />
                     <label for='terms-check' class='text-capital margin-left-sm'>
                         i accept all terms & conditions
@@ -73,4 +91,5 @@
     
     </main>
 </body>
+<script src="./script.js"></script>
 </html>
