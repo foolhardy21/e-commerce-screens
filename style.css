@@ -23,6 +23,14 @@ article {
     height: max-content;
 }
 
+.card-cart {
+    width: 28rem;
+}
+.card-image {
+    /* object-fit: cover; */
+    /* width: 710px; */
+}
+
 input[type='number'] {
     width: 3rem;
 }
