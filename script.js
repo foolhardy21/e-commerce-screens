@@ -6,7 +6,7 @@ togglePassword.addEventListener('change', () => {
     if(passwordInput.type === 'password') {
         passwordInput.type = 'text'
         confirmPasswordInput.type = 'text' 
-    } else if(passwordInput.type === 'text') {
+    } else {
         passwordInput.type = 'password'
         confirmPasswordInput.type = 'password' 
     }
