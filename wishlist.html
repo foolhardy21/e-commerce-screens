@@ -5,112 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
-    <link rel='stylesheet' href='https://zen-bartik-5ee75e.netlify.app/style.css' />
     <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css' />
     <link rel='stylesheet' href='./style.css' />
     <title>Wishlist Page</title>
 </head>
 <body>
     
-    <header class='flex-horizontal-stretch'>
-        <span>website</span>
-        <div class='flex-vertical-center'>
-            <span class='material-icons'>
+    <header id="page-header" class='flex-horizontal-stretch flex-vertical-center padding-xxlg'>
+
+        <span class="text-uppercase c-white letter-space-md font-size-lg">
+            sneakerstore
+        </span>
+        
+        <div class='search-bar flex-horizontal-start flex-vertical-center'>
+            <span class='material-icons c-darkgray'>
                 search
             </span>
-            <input type='text' placeholder='Search' />
+            <input type='text' class="padding-md no-outline no-border c-black" placeholder='Search' />
         </div>
+        
         <nav class='flex-vertical-center'>
-            <button class='btn-filled margin-right-xxlg'>logout</button>
-            <span class='material-icons margin-right-xxlg'>
-                favorite_border
+            <button class='btn-filled text-capital letter-space-md c-white no-border padding-md font-size-md margin-right-xxlg'>
+                logout
+            </button>
+            <span class='material-icons card-icon c-white margin-right-xxlg'>
+                favorite
             </span>
-            <span class='material-icons margin-right-xxlg'>
+            <span class='material-icons margin-right-xxlg card-icon c-white'>
                 shopping_cart
             </span>
         </nav>
+
     </header>
     
     <main class='flex-column flex-center padding-xxlg'>
-        <p class='font-size-xlg text-bold text-capital margin-btm-xlg'>my wishlist</p>
-        <section class='flex-row'>
-
+        <p class='font-size-xlg c-darkgray text-bold text-capital margin-btm-xlg'>
+            my wishlist
+        </p>
+        
+        <section id="wishlist-wrapper" class='flex-center'>
             <article class='card-wrapper card-shadow-sm pos-relative border-radius-sm margin-top-md margin-horizontal-xxlg' >
-                <span class='material-icons pos-absolute top-right-1 icon-close'>
-                    favorite_border
+                <span class='material-icons pos-absolute top-right-1 card-icon c-red'>
+                    favorite
                 </span>
                 <main>
                     <img src='https://picsum.photos/400/300' class='card-image border-top-radius-sm' />
                     <header class='padding-xxlg flex-column flex-center'>
-                        <p class='font-size-md text-capital text-bold letter-space-md card-heading-black'>
-                            men premium jacket
+                        <p class='font-size-md text-capital text-bold letter-space-md c-black'>
+                            air jordan 1
                         </p>
-                        <p class='margin-0 margin-top-sm letter-space-sm font-capital card-subheading-black font-size-sm'>
-                            Rs. 2000
+                        <p class='margin-0 margin-top-sm letter-space-sm font-capital c-darkgray font-size-sm'>
+                            Rs. 20000
                         </p>
                     </header>
                 </main>
-                <button class='add-btn btn-filled font-size-md text-capital padding-lg'>
+                <button class='add-btn btn-filled c-white no-border font-size-md text-capital padding-lg'>
                     move to cart
                 </button>
             </article>
 
             <article class='card-wrapper card-shadow-sm pos-relative border-radius-sm margin-top-md margin-horizontal-xxlg' >
-                <span class='material-icons pos-absolute top-right-1 icon-close'>
-                    favorite_border
+                <span class='material-icons pos-absolute top-right-1 card-icon c-red'>
+                    favorite
                 </span>
                 <main>
                     <img src='https://picsum.photos/400/300' class='card-image border-top-radius-sm' />
                     <header class='padding-xxlg flex-column flex-center'>
-                        <p class='font-size-md text-capital text-bold letter-space-md card-heading-black'>
-                            men premium jacket
+                        <p class='font-size-md text-capital text-bold letter-space-md c-black'>
+                            yeezy 350
                         </p>
-                        <p class='margin-0 margin-top-sm letter-space-sm font-capital card-subheading-black font-size-sm'>
-                            Rs. 2000
+                        <p class='margin-0 margin-top-sm letter-space-sm font-capital c-darkgray font-size-sm'>
+                            Rs. 35000
                         </p>
                     </header>
                 </main>
-                <button class='add-btn btn-filled font-size-md text-capital padding-lg'>
+                <button class='add-btn btn-filled c-white no-border font-size-md text-capital padding-lg'>
                     move to cart
                 </button>
             </article>
 
             <article class='card-wrapper card-shadow-sm pos-relative border-radius-sm margin-top-md margin-horizontal-xxlg' >
-                <span class='material-icons pos-absolute top-right-1 icon-close'>
-                    favorite_border
+                <span class='material-icons pos-absolute top-right-1 card-icon c-red'>
+                    favorite
                 </span>
                 <main>
                     <img src='https://picsum.photos/400/300' class='card-image border-top-radius-sm' />
                     <header class='padding-xxlg flex-column flex-center'>
-                        <p class='font-size-md text-capital text-bold letter-space-md card-heading-black'>
-                            men premium jacket
+                        <p class='font-size-md text-capital text-bold letter-space-md c-black'>
+                            air jordan 12
                         </p>
-                        <p class='margin-0 margin-top-sm letter-space-sm font-capital card-subheading-black font-size-sm'>
-                            Rs. 2000
+                        <p class='margin-0 margin-top-sm letter-space-sm font-capital c-darkgray font-size-sm'>
+                            Rs. 12000
                         </p>
                     </header>
                 </main>
-                <button class='add-btn btn-filled font-size-md text-capital padding-lg'>
+                <button class='add-btn btn-filled c-white no-border c-white no-border font-size-md text-capital padding-lg'>
                     move to cart
                 </button>
             </article>
 
             <article class='card-wrapper card-shadow-sm pos-relative border-radius-sm margin-top-md margin-horizontal-xxlg' >
-                <span class='material-icons pos-absolute top-right-1 icon-close'>
-                    favorite_border
+                <span class='material-icons pos-absolute top-right-1 card-icon c-red'>
+                    favorite
                 </span>
                 <main>
                     <img src='https://picsum.photos/400/300' class='card-image border-top-radius-sm' />
                     <header class='padding-xxlg flex-column flex-center'>
-                        <p class='font-size-md text-capital text-bold letter-space-md card-heading-black'>
-                            men premium jacket
+                        <p class='font-size-md text-capital text-bold letter-space-md c-black'>
+                            converse low top
                         </p>
-                        <p class='margin-0 margin-top-sm letter-space-sm font-capital card-subheading-black font-size-sm'>
-                            Rs. 2000
+                        <p class='margin-0 margin-top-sm letter-space-sm font-capital c-darkgray font-size-sm'>
+                            Rs. 1500
                         </p>
                     </header>
                 </main>
-                <button class='add-btn btn-filled font-size-md text-capital padding-lg'>
+                <button class='add-btn btn-filled c-white no-border font-size-md text-capital padding-lg'>
                     move to cart
                 </button>
             </article>
