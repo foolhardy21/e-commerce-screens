@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#page-header {
+.page-header {
     background : var(--c-black);
 }
 
@@ -21,18 +21,18 @@
     height: 30rem;
 }
 
-#brands-wrapper {
+.brands-wrapper {
     justify-items: center;
     row-gap: 0.5rem;
 }
 
 
-#brand-card {
+.brand-card {
     width: 13rem;
     height: 13rem;
 }
 
-#brand-card:hover {
+.brand-card:hover {
     cursor: pointer;
 }
 
