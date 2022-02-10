@@ -21,6 +21,25 @@
     height: 30rem;
 }
 
+#brands-wrapper {
+    justify-items: center;
+    row-gap: 0.5rem;
+}
+
+
+#brand-card {
+    width: 13rem;
+    height: 13rem;
+}
+
+#brand-card:hover {
+    cursor: pointer;
+}
+
+.card-image {
+    height: 100%;
+}
+
 @media only screen and (max-width: 400px) {
     .search-bar > input {
         width: 5rem;
