@@ -25,12 +25,13 @@
 
 .cart-item {
     background: var(--c-white);
+    height: max-content;
 }
 
 .cart-item-image {
     width: 35%;
-    max-width: 305px;
-    max-height: 305px;
+    max-width: 15rem;
+    height: 15rem;
 }
 
 input[type='number'] {
