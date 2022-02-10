@@ -16,7 +16,7 @@ body {
     row-gap: 1rem;
 }
 
-#page-header {
+.page-header {
     grid-area: header;
     background : var(--c-black);
 }
@@ -29,7 +29,7 @@ body {
     width: 10rem;
 }
 
-#filter-aside {
+.filter-aside {
     grid-area: aside;
 }
 
@@ -37,7 +37,7 @@ input[type='range'] {
     width: 90%;
 }
 
-#products-main {
+.products-main {
     grid-area: main;
 }
 
