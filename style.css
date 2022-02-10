@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#page-header {
+.page-header {
     background : var(--c-black);
 }
 
