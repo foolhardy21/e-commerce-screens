@@ -5,49 +5,38 @@
 
 body {
     display: grid;
-    grid-template-areas: "header header header"
-    "aside main main"
-    "aside main main";
-    grid-template-columns: 15rem 1fr 1fr;
+    grid-template-areas: "header header"
+    "aside main"
+    "aside main";
+    grid-template-columns: 15rem 1fr;
     row-gap: 1rem;
 }
 
-header {
+#page-header {
     grid-area: header;
+    background : var(--c-black);
 }
 
-aside {
+.search-bar {
+    background-color: var(--c-white);
+}
+
+.search-bar > input {
+    width: 10rem;
+}
+
+#filter-aside {
     grid-area: aside;
 }
 
-main {
+#products-main {
     grid-area: main;
-}
-
-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .add-btn {
     width: 100%;
 }
 
-@media only screen and (max-width: 1400px) {
-    section {
-        grid-template-columns: repeat(3, 1fr);
-    }
+input[type='range'] {
+    width: 90%;
 }
-
-@media only screen and (max-width: 900px) {
-    section {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    section {
-        grid-template-columns: 1fr;
-    }
-}
-
