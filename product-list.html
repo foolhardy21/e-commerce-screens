@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css' />
+    <link rel='stylesheet' href='./style.css' />
+    <title>Product Page</title>
+</head>
+<body class="productlist-page">
+    
+    <header class='productlist-header page-header flex-horizontal-stretch flex-vertical-center padding-xxlg'>
+
+        <span class="text-uppercase c-white letter-space-md font-size-lg">
+            sneakerstore
+        </span>
+        
+        <div class='search-bar flex-horizontal-start flex-vertical-center'>
+            <span class='material-icons c-darkgray'>
+                search
+            </span>
+            <input type='text' class="padding-md no-outline no-border c-black" placeholder='Search' />
+        </div>
+        
+        <nav class='flex-vertical-center'>
+            <button class='btn-text container-transparent no-border text-capital letter-space-md c-blue padding-sm font-size-md margin-right-xxlg'>
+                logout
+            </button>
+            <span class='material-icons card-icon c-white margin-right-xxlg'>
+                favorite
+            </span>
+            <span class='material-icons margin-right-xxlg card-icon c-white'>
+                shopping_cart
+            </span>
+        </nav>
+
+    </header>
+  
+    <aside class='filters-aside card-shadow-sm margin-right-md padding-xxlg c-darkgray pos-sticky top-left-0'>
+            
+        <div class='flex-horizontal-stretch margin-btm-md'>
+            <p class='font-size-lg text-capital letter-space-md'>
+                filters
+            </p>
+            <button class='btn-text c-blue font-size-sm container-transparent no-border text-capital padding-sm border-radius-sm'>
+                clear
+            </button>
+        </div>
+        
+        <div class='margin-btm-md'>
+            <p class='font-size-md text-capital letter-space-md margin-btm-sm'>price</p>
+            <input type='range' min='50' max='200' value='50' />
+        </div>
+
+        <div class='margin-btm-md flex-column'>
+            <p class='font-size-md text-capital letter-space-md margin-btm-sm'>
+                sort by price
+            </p>
+            <div id="price-sort-grp">
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='radio' id='price-asc' name="price-sort-grp" class='margin-right-md' />
+                    <label for='price-asc' class='text-capital'>low to high</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='radio' id='price-desc' name="price-sort-grp" class='margin-right-md' />
+                    <label for='price-desc' class='text-capital'>high to low</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class='margin-btm-md flex-column'>
+                <p class='font-size-md text-capital letter-space-md margin-btm-sm'>
+                    brands
+                </p>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input  type='checkbox' id='nike-category' class='margin-right-md' />
+                    <label for='nike-category' class='text-capital'>nike</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='checkbox' id='adidas-category' class='margin-right-md' />
+                    <label for='adidas-category' class='text-capital'>adidas</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='checkbox' id='converse-category' class='margin-right-md' />
+                    <label for='converse-category' class='text-capital'>converse</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='checkbox' id='nbalance-category' class='margin-right-md' />
+                    <label for='nbalance-category' class='text-capital'>new balance</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='checkbox' id='vans-category' class='margin-right-md' />
+                    <label for='vans-category' class='text-capital'>vans</label>
+                </div>
+        </div>
+        
+        <div class='margin-btm-md flex-column'>
+            <p class='font-size-md text-capital letter-space-md margin-btm-sm'>rating</p>
+            <div id="rating-group">
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='radio' id='4-atleast' name="rating-group" class='margin-right-md' />
+                    <label for='4-atleast' class="text-capital">atleast 4 stars</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='radio' id='3-atleast'  name="rating-group" class='margin-right-md' />
+                    <label for='3-atleast' class="text-capital">atleast 3 stars</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='radio' id='2-atleast' name="rating-group" class='margin-right-md' />
+                    <label for='2-atleast' class="text-capital">atleast 2 stars</label>
+                </div>
+                <div class='flex-vertical-center margin-btm-sm'>
+                    <input type='radio' id='1-atleast'  name="rating-group" class='margin-right-md' />
+                    <label for='1-atleast' class="text-capital">atleast 1 star</label>
+                </div>
+            </div>
+        </div>
+
+        
+    </aside>
+
+  <main class='products-main padding-bottom-md pos-relative'>
+    
+    <span class="scroll-top-btn material-icons c-blue btn-text padding-lg border-radius-circle pos-fixed bottom-right-5">
+        arrow_upward
+    </span>
+    
+    <p class='font-size-xlg flex-center text-capital'>sneakers</p>
+    
+    <section class="grid grid-maxcols-4 padding-md">
+
+        <article class='product-wrapper card-shadow-sm pos-relative border-radius-sm margin-btm-md margin-left-md c-darkgray' >
+            <span class='material-icons pos-absolute top-right-1 card-icon'>
+                favorite_border
+            </span>
+            <div class='badge-size-lg text-uppercase badge-text-sm flex-center padding-md badge-yellow c-black text-bold letter-space-md pos-absolute top-left-0'>
+                offer
+            </div>
+            <img src='./assets/air-jordan-5-retro-shoes.jfif' class='product-img border-top-radius-sm' />
+            <header class='padding-xxlg margin-btm-sm flex-column flex-center'>
+                <p class='font-size-md text-uppercase letter-space-md'>
+                    nike
+                </p>
+                <p class='font-size-md text-capital letter-space-md'>
+                    air jordan 5
+                </p>
+                <p class='margin-top-sm letter-space-sm font-capital font-size-sm'>
+                    Rs. 8000
+                    <span class="c-green">
+                        50% off
+                    </span>
+                </p>
+            </header>
+            <button class='add-btn btn-filled no-border c-white font-size-md text-capital padding-lg'>
+                go to cart
+            </button>
+        </article>
+
+        <article class='product-wrapper card-shadow-sm pos-relative border-radius-sm margin-btm-md margin-left-md c-darkgray' >
+            <span class='material-icons pos-absolute top-right-1 card-icon'>
+                favorite_border
+            </span>
+            <img src='./assets/connor-houtman-0_aAhxoXOSo-unsplash.jpg' class='product-img border-top-radius-sm' />
+            <header class='padding-xxlg margin-btm-sm flex-column flex-center'>
+                <p class='font-size-md text-uppercase letter-space-md'>
+                    adidas
+                </p>
+                <p class='font-size-md text-capital letter-space-md'>
+                    yeezy boost 700
+                </p>
+                <p class='margin-top-sm letter-space-sm font-capital font-size-sm'>
+                    Rs. 35000
+                </p>
+            </header>
+            <button class='add-btn btn-text container-transparent no-border c-blue font-size-md text-capital padding-lg'>
+                add to cart
+            </button>
+        </article>
+
+        <article class='product-wrapper card-shadow-sm pos-relative border-radius-sm margin-btm-md margin-left-md c-darkgray' >
+            <span class='material-icons pos-absolute top-right-1 card-icon'>
+                favorite_border
+            </span>
+            <img src='./assets/kris-gerhard-0BKZfcamvGg-unsplash.jpg' class='product-img border-top-radius-sm' />
+            <header class='padding-xxlg margin-btm-sm flex-column flex-center'>
+                <p class='font-size-md text-uppercase letter-space-md'>
+                    converse
+                </p>
+                <p class='font-size-md text-capital letter-space-md'>
+                    low tops
+                </p>
+                <p class='margin-top-sm letter-space-sm font-capital font-size-sm'>
+                    Rs. 5600
+                </p>
+            </header>
+            <button class='add-btn btn-filled no-border c-white font-size-md text-capital padding-lg'>
+                go to cart
+            </button>
+        </article>
+
+        <article class='product-wrapper card-shadow-sm pos-relative border-radius-sm margin-btm-md margin-left-md c-darkgray' >
+            <span class='material-icons pos-absolute top-right-1 card-icon'>
+                favorite_border
+            </span>
+            <div class='badge-size-lg text-uppercase badge-text-sm flex-center padding-md badge-yellow c-black text-bold letter-space-md pos-absolute top-left-0'>
+                offer
+            </div>
+            <img src='./assets/ryan-plomp-76w_eDO1u1E-unsplash.jpg' class='product-img border-top-radius-sm' />
+            <header class='padding-xxlg margin-btm-sm flex-column flex-center'>
+                <p class='font-size-md text-uppercase letter-space-md'>
+                    nike
+                </p>
+                <p class='font-size-md text-capital letter-space-md'>
+                    air jordan 1
+                </p>
+                <p class='margin-top-sm letter-space-sm font-capital font-size-sm'>
+                    Rs. 15000
+                    <span class="c-green">
+                        40% off
+                    </span>
+                </p>
+            </header>
+            <button class='add-btn btn-text container-transparent no-border c-blue font-size-md text-capital padding-lg'>
+                add to cart
+            </button>
+        </article>
+
+        <article class='product-wrapper card-shadow-sm pos-relative border-radius-sm margin-btm-md margin-left-md c-darkgray' >
+            <span class='material-icons pos-absolute top-right-1 card-icon'>
+                favorite_border
+            </span>
+            <div class='badge-size-lg text-uppercase badge-text-sm flex-center padding-md badge-yellow c-black text-bold letter-space-md pos-absolute top-left-0'>
+                offer
+            </div>
+            <img src='./assets/kris-gerhard-0BKZfcamvGg-unsplash.jpg' class='product-img border-top-radius-sm' />
+            <header class='padding-xxlg margin-btm-sm flex-column flex-center'>
+                <p class='font-size-md text-uppercase letter-space-md'>
+                    converse
+                </p>
+                <p class='font-size-md text-capital letter-space-md'>
+                    all star high tops
+                </p>
+                <p class='margin-top-sm letter-space-sm font-capital font-size-sm'>
+                    Rs. 8000
+                    <span class="c-green">
+                        50% off
+                    </span>
+                </p>
+            </header>
+            <button class='add-btn btn-text container-transparent no-border c-blue font-size-md text-capital padding-lg'>
+                add to cart
+            </button>
+        </article>
+
+        <article class='product-wrapper card-shadow-sm pos-relative border-radius-sm margin-btm-md margin-left-md c-darkgray' >
+            <span class='material-icons pos-absolute top-right-1 card-icon'>
+                favorite_border
+            </span>
+            <img src='./assets/connor-houtman-0_aAhxoXOSo-unsplash.jpg' class='product-img border-top-radius-sm' />
+            <header class='padding-xxlg margin-btm-sm flex-column flex-center'>
+                <p class='font-size-md text-uppercase letter-space-md'>
+                    adidas
+                </p>
+                <p class='font-size-md text-capital letter-space-md'>
+                    yeezy boost 350
+                </p>
+                <p class='margin-top-sm letter-space-sm font-capital font-size-sm'>
+                    Rs. 10000
+                </p>
+            </header>
+            <button class='add-btn btn-text container-transparent no-border c-blue font-size-md text-capital padding-lg'>
+                add to cart
+            </button>
+        </article>
+
+    </section>
+  </main>
+
+</body>
+<script src="./script.js"></script>
+</html>

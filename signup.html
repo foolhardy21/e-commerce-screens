@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
+    <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css' />
+    <link rel='stylesheet' href='./style.css' />
+    <title>Signup Page</title>
+</head>
+<body>
+    
+    <header class='page-header flex-horizontal-stretch flex-vertical-center padding-xxlg'>
+
+        <span class="text-uppercase c-white letter-space-md font-size-lg">
+            sneakerstore
+        </span>
+        
+        <div class='search-bar flex-horizontal-start flex-vertical-center'>
+            <span class='material-icons c-darkgray'>
+                search
+            </span>
+            <input type='text' class="padding-md no-outline no-border c-black" placeholder='Search' />
+        </div>
+        
+        <nav class='flex-vertical-center'>
+            <button class='btn-filled text-capital letter-space-md c-white no-border padding-md font-size-md margin-right-xxlg'>
+                login
+            </button>
+            <span class='material-icons card-icon c-white margin-right-xxlg'>
+                favorite_border
+            </span>
+            <span class='material-icons margin-right-xxlg card-icon c-white'>
+                shopping_cart
+            </span>
+        </nav>
+
+    </header>
+
+    <main class='flex-center'>
+        
+        <section class='card-auth card-shadow-sm flex-column padding-xxlg margin-top-xlg flex-center'>
+            <p class='text-capital font-size-lg letter-space-md margin-btm-md c-black'>
+                signup
+            </p>
+            <form class='flex-column margin-horizontal-xxlg c-darkgray'>
+                <label for="email-input" class='text-capital margin-top-md'>
+                    email address
+                </label>
+                <input type='email' id='email-input' class="padding-sm border-thin no-outline margin-top-sm" />
+                <label for="fname-input" class='text-capital margin-top-md'>
+                    first name
+                </label>
+                <input type='text' id='fname-input' class="padding-sm border-thin no-outline margin-top-sm" />
+                <label for="lname-input" class='text-capital margin-top-md'>
+                    last name
+                </label>
+                <input type='text' id='lname-input' class="padding-sm border-thin no-outline margin-top-sm" />
+                <label for='pass-input' class='text-capital margin-top-md'>
+                    password
+                </label>
+                <input type='password' id='pass-input' class="'margin-top-sm no-outline padding-sm border-thin" />
+                <label for='cpass-input' class='text-capital margin-top-md'>
+                    confirm password
+                </label>
+                <input type='password' id='cpass-input' class="'margin-top-sm no-outline padding-sm border-thin" />
+                <div class='flex-horizontal-end flex-vertical-center margin-top-md margin-btm-sm'>
+                    <input type='checkbox' id='toggle-pass' />
+                    <label for='toggle-pass' class='text-capital margin-left-sm font-size-sm'>
+                        show password
+                    </label>
+                </div>
+                <div class='flex-horizontal-start flex-vertical-center margin-top-sm margin-btm-lg'>
+                    <input type='checkbox' id='terms-check' />
+                    <label for='terms-check' class='font-size-sm text-capital margin-left-sm'>
+                        i accept all terms & conditions
+                    </label>
+                </div>
+                <button class='btn-filled c-white no-border letter-space-md font-size-md text-capital padding-md letter-space-sm margin-top-lg'>
+                    sign up
+                </button>
+            </form>
+            <button class='btn-text c-blue container-transparent no-border font-size-md flex-center text-capital padding-md letter-space-sm margin-top-md'>
+                already have an account
+                <span class='material-icons'>
+                    chevron_right
+                </span>
+            </button>
+        </section>
+    
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
