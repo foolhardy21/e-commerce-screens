@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#page-header {
+.page-header {
     background : var(--c-black);
 }
 
@@ -41,6 +41,24 @@ input[type='number'] {
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
+}
+
+.card-wrapper {
+    width: max-content;
+    height: max-content;
+}
+
+.card-image {
+    width: 15rem;
+    height: 15rem;
+}
+
+.add-btn {
+    width: 100%;
+}
+
+.card-auth {
+    width: 25rem;
 }
 
 @media only screen and (max-width: 700px) {
