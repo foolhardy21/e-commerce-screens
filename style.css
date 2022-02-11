@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background : var(--c-black);
+}
+
+.search-bar {
+    background-color: var(--c-white);
+}
+
+.search-bar > input {
+    width: 10rem;
+}
+
+section {
+    width: 25rem;
+    box-shadow: 0 0 4px -2px;
+}
+
+@media only screen and (max-width: 400px) {
+    .search-bar > input {
+        width: 5rem;
+    }
+}
