@@ -15,6 +15,16 @@
     width: 10rem;
 }
 
+.card-wrapper {
+    width: max-content;
+    height: max-content;
+}
+
+.card-image {
+    width: 15rem;
+    height: 15rem;
+}
+
 .add-btn {
     width: 100%;
 }
