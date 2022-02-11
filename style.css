@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header {
+.page-header {
     background : var(--c-black);
 }
 
@@ -14,6 +14,19 @@ header {
 .search-bar > input {
     width: 10rem;
 }
+
+.card-wrapper {
+    width: max-content;
+    height: max-content;
+}
+
+.card-image {
+    width: 15rem;
+    height: 15rem;
+}
+
+.add-btn {
+    width: 100%;
 
 section {
     width: 25rem;
