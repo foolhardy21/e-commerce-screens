@@ -27,10 +27,10 @@
 
 .add-btn {
     width: 100%;
+}
 
-section {
+.card-auth {
     width: 25rem;
-    box-shadow: 0 0 4px -2px;
 }
 
 @media only screen and (max-width: 400px) {
