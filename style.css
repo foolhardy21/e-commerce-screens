@@ -43,12 +43,12 @@ input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
-.card-wrapper {
+.card-wrapper-wishlist {
     width: max-content;
     height: max-content;
 }
 
-.card-image {
+.card-image-wishlist {
     width: 15rem;
     height: 15rem;
 }
