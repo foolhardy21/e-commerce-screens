@@ -32,6 +32,30 @@ html {
     width: 10rem;
 }
 
+.hero-img {
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+.brands-wrapper {
+    justify-items: center;
+    row-gap: 0.5rem;
+}
+
+.brand-card {
+    width: 13rem;
+    height: 13rem;
+}
+
+.brand-card:hover {
+    cursor: pointer;
+}
+
+.card-image {
+    height: 100%;
+}
+
 .filter-aside {
     grid-area: aside;
 }
