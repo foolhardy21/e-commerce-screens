@@ -6,10 +6,6 @@ const cartContainer = document.querySelector('.cart-wrapper')
 const cartItemsContainer = document.querySelector('.cart-items-wrapper')
 const orderSummaryContainer = document.querySelector('.cart-summary-wrapper')
 
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo(0,0)
-})
-
 if(window.innerWidth <= 500) {
     cartContainer.classList.add('flex-column')
     cartContainer.classList.add('flex-vertical-center')
@@ -48,4 +44,8 @@ togglePassword.addEventListener('change', () => {
         passwordInput.type = 'password'
         confirmPasswordInput.type = 'password' 
     }
+})
+
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo(0,0)
 })
