@@ -10,6 +10,6 @@ It has following screens:
 - Wishlist Page
 - Cart Page   
 
-I have used [SpaceUI](https://zen-bartik-5ee75e.netlify.app/) component library to build these screens. 
+I have used [SpaceUI](https://github.com/foolhardy21/component-library) component library to build these screens. 
 
 To run this project locally, fork and clone this repo and run `index.html` in your browser.
