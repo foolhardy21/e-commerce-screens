@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
+    <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css' />
+    <link rel='stylesheet' href='../../style.css' />
+    <title>Cart Page</title>
+</head>
+
+<body>
+
+    <header class='page-header flex-horizontal-stretch flex-vertical-center padding-xxlg'>
+
+        <span class="text-uppercase c-white letter-space-md font-size-lg">
+            sneakerstore
+        </span>
+
+        <div class='search-bar flex-horizontal-start flex-vertical-center'>
+            <span class='material-icons c-darkgray'>
+                search
+            </span>
+            <input type='text' class="padding-md no-outline no-border c-black" placeholder='Search' />
+        </div>
+
+        <nav class='flex-vertical-center'>
+            <button
+                class='btn-text container-transparent text-capital letter-space-md c-blue no-border padding-md font-size-md margin-right-xxlg'>
+                logout
+            </button>
+            <span class='material-icons card-icon c-white margin-right-xxlg'>
+                favorite
+            </span>
+            <span class='material-icons margin-right-xxlg card-icon c-white'>
+                shopping_cart
+            </span>
+        </nav>
+
+    </header>
+
+    <main class='flex-column padding-xxlg'>
+
+        <p class='text-capital font-size-xlg margin-btm-md c-black flex-center'>your cart</p>
+
+        <section class='flex-row cart-wrapper'>
+
+            <section class="flex-column cart-items-wrapper">
+
+                <article class='flex-row cart-item margin-top-lg card-shadow-sm margin-right-xxlg'>
+                    <img src='../../assets/air-jordan-5-retro-shoes.jfif' class='cart-item-image' />
+                    <div class="flex-grow-1 margin-top-lg">
+                        <div class="flex-horizontal-start margin-btm-sm">
+                            <p class='font-size-md text-uppercase letter-space-md c-black margin-left-md'>nike</p>
+                            <p
+                                class='font-size-md text-capital letter-space-md c-black margin-left-sm margin-right-xxlg'>
+                                air jordan 5</p>
+                            <p class='font-size-md text-uppercase letter-space-md c-darkgray'>UK 9</p>
+                        </div>
+                        <p class='font-size-sm text-capital letter-space-md c-darkgray margin-left-md'>Rs. 16000</p>
+                        <p class='font-size-sm text-capital letter-space-sm c-green margin-left-md margin-btm-md'>50%
+                            off</p>
+                        <div class='flex-horizontal-start flex-vertical-center margin-btm-md'>
+                            <p
+                                class='font-size-sm text-capital letter-space-sm margin-top-sm c-darkgray margin-right-md margin-left-md'>
+                                quantity: </p>
+                            <button
+                                class='btn-outlined container-transparent c-blue border-thin border-blue padding-md margin-right-md'>-</button>
+                            <input type='number' class='padding-md margin-right-md' placeholder='1' />
+                            <button class='btn-filled c-white no-border padding-md'>+</button>
+                        </div>
+                        <footer class="flex-column">
+                            <button
+                                class='btn-text no-border c-blue container-transparent text-capital padding-lg font-size-sm letter-space-md'>remove
+                                from cart</button>
+                            <button
+                                class='btn-text no-border c-blue container-transparent text-capital padding-lg font-size-sm letter-space-md'>move
+                                to wishlist</button>
+                        </footer>
+                    </div>
+                </article>
+
+                <article class='flex-row cart-item margin-top-lg card-shadow-sm margin-right-xxlg'>
+                    <img src='../../assets/air-jordan-5-retro-shoes.jfif' class='cart-item-image' />
+                    <div class="flex-grow-1 margin-top-lg">
+                        <div class="flex-horizontal-start margin-btm-sm">
+                            <p class='font-size-md text-uppercase letter-space-md c-black margin-left-md'>nike</p>
+                            <p
+                                class='font-size-md text-capital letter-space-md c-black margin-left-sm margin-right-xxlg'>
+                                air jordan 5</p>
+                            <p class='font-size-md text-uppercase letter-space-md c-darkgray'>UK 11</p>
+                        </div>
+                        <p class='font-size-sm text-capital letter-space-md c-darkgray margin-left-md'>Rs. 17500</p>
+                        <p class='font-size-sm text-capital letter-space-sm c-green margin-left-md margin-btm-md'>50%
+                            off</p>
+                        <div class='flex-horizontal-start flex-vertical-center margin-btm-md'>
+                            <p
+                                class='font-size-sm text-capital letter-space-sm margin-top-sm c-darkgray margin-right-md margin-left-md'>
+                                quantity: </p>
+                            <button
+                                class='btn-outlined container-transparent c-blue border-thin border-blue padding-md margin-right-md'>-</button>
+                            <input type='number' class='padding-md margin-right-md' placeholder='1' />
+                            <button class='btn-filled c-white no-border padding-md'>+</button>
+                        </div>
+                        <footer class="flex-column">
+                            <button
+                                class='btn-text no-border c-blue container-transparent text-capital padding-lg font-size-sm letter-space-md'>remove
+                                from cart</button>
+                            <button
+                                class='btn-text no-border c-blue container-transparent text-capital padding-lg font-size-sm letter-space-md'>move
+                                to wishlist</button>
+                        </footer>
+                    </div>
+                </article>
+
+            </section>
+
+            <article class='card-wrapper cart-summary-wrapper margin-top-lg card-shadow-sm padding-xxlg'>
+                <main class='flex-column'>
+                    <p class='font-size-md text-uppercase letter-space-md c-black margin-btm-lg'>
+                        order details
+                    </p>
+                    <div
+                        class='c-darkgray flex-horizontal-stretch text-capital font-size-sm letter-space-sm margin-btm-sm'>
+                        <p>order total</p>
+                        <p>Rs33500</p>
+                    </div>
+                    <div
+                        class='c-darkgray flex-horizontal-stretch text-capital font-size-sm letter-space-sm margin-btm-sm'>
+                        <p>order discount</p>
+                        <p class="c-green">-Rs. 16750</p>
+                    </div>
+                    <div
+                        class='c-darkgray flex-horizontal-stretch text-capital font-size-sm letter-space-sm margin-btm-lg'>
+                        <p>delivery</p>
+                        <p>Rs. 600</p>
+                    </div>
+                    <div
+                        class='c-darkgray font-size-md flex-horizontal-stretch text-capital font-size-md letter-space-md margin-btm-sm'>
+                        <p class="text-uppercase">total amount</p>
+                        <p>Rs.17300</p>
+                    </div>
+
+                </main>
+                <footer class='margin-top-md flex-column'>
+                    <button
+                        class='btn-filled c-white no-border font-size-md letter-space-md text-uppercase padding-lg'>place
+                        order</button>
+                </footer>
+            </article>
+
+        </section>
+    </main>
+</body>
+<script src="../scripts/cart-script.js"></script>
+
+</html>

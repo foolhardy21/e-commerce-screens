@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+    #pg-header {
+        flex-direction: column;
+    }
+    #pg-header div {
+        margin-top: 0.5rem;
+    }
+    #pg-header nav {
+        margin-top: 1rem;
+    }
+}
