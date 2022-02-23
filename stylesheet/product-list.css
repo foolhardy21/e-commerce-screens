@@ -1,0 +1,10 @@
+.aside-filters {
+    width: 20rem;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#btn-filters {
+    width: max-content;
+    height: max-content;
+}
