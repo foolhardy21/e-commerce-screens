@@ -1,4 +1,8 @@
-
+#pg-header {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-color: var(--clr-off-primary);
+}
 
 /* * {
     margin: 0;
