@@ -1,79 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
-    <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css' />
-    <link rel='stylesheet' href='../../style.css' />
+    <link rel='stylesheet' href='https://deploy-preview-11--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel='stylesheet' href='../../stylesheet/style.css' />
     <title>Login Page</title>
 </head>
-<body>
-    
-    <header class='page-header flex-horizontal-stretch flex-vertical-center padding-xxlg'>
 
-        <span class="text-uppercase c-white letter-space-md font-size-lg">
+<body>
+
+    <header id="pg-header" class='flx flx-maj-even flx-min-center pd-md'>
+        <span class="txt-ucase txt-primary txt-lg">
             sneakerstore
         </span>
-        
-        <div class='search-bar flex-horizontal-start flex-vertical-center'>
-            <span class='material-icons c-darkgray'>
-                search
+        <nav class="flx flx-min-center">
+            <span class="material-icons icon-primary mg-right-s">
+                person
             </span>
-            <input type='text' class="padding-md no-outline no-border c-black" placeholder='Search' />
-        </div>
-        
-        <nav class='flex-vertical-center'>
-            <button class='btn-filled text-capital letter-space-md c-white no-border padding-md font-size-md margin-right-xxlg'>
-                signup
-            </button>
-            <span class='material-icons card-icon c-white margin-right-xxlg'>
-                favorite_border
+            <span class="material-icons icon-primary mg-right-s">
+                favorite
             </span>
-            <span class='material-icons margin-right-xxlg card-icon c-white'>
+            <span class="material-icons icon-primary">
                 shopping_cart
             </span>
         </nav>
-
     </header>
 
-    <main class='flex-center'>
-        
-        <section class='card-auth card-shadow-sm flex-column padding-xxlg margin-top-xlg flex-center'>
-            <p class='text-capital font-size-lg letter-space-md margin-btm-md'>
+    <main class='flx flx-center'>
+
+        <section class='card-shadow-xs flx flx-column flx-center pd-lg mg-top-lg'>
+            <p class='txt-cap txt-lg'>
                 login
             </p>
-            <form class='flex-column margin-horizontal-xxlg c-darkgray'>
-                <label for="email-input" class='text-capital margin-top-md'>
-                    email address
-                </label>
-                <input type='email' id='email-input' class="padding-sm border-thin no-outline margin-top-sm" />
-                <label for='pass-input' class='text-capital margin-top-md'>
-                    password
-                </label>
-                <input type='password' id='pass-input' class="'margin-top-sm no-outline padding-sm border-thin" />
-                <div class='flex-horizontal-stretch flex-vertical-center margin-top-md margin-btm-lg'>
-                    <div class='flex-vertical-center'>
+            <form class='auth-form flx flx-column txt-primary mg-left-xlg mg-right-xlg'>
+                <input type='email' id='email-input' placeholder="enter email here"
+                    class="input input-lg txt-md pd-xs mg-top-s" />
+                <input type='password' id='pass-input' placeholder="enter password here"
+                    class="input input-lg txt-md pd-xs mg-top-s" />
+                <div class='flx flx-maj-stretch flx-min-center mg-top-s mg-btm-s'>
+                    <div class='flx-min-center'>
                         <input type='radio' id='terms-check' />
-                        <label for='terms-check' class='text-capital margin-left-sm'>remember me</label>
+                        <label for='terms-check' class='txt-cap txt-md mg-left-xs'>remember me</label>
                     </div>
-                    <button class='btn-text container-transparent no-border c-blue text-capital padding-sm margin-left-md letter-space-sm'>
+                    <button class='btn-txt txt-primary txt-md txt-cap pd-xs mg-left-xs bg-primary'>
                         forgot your password?
                     </button>
                 </div>
-                <button class='btn-filled c-white no-border letter-space-md font-size-md text-capital padding-md letter-space-sm margin-top-lg'>
+                <button class='btn-solid txt-secondary bg-secondary txt-md txt-ucase pd-xs'>
                     log in
                 </button>
             </form>
-            <button class='btn-text c-blue container-transparent no-border font-size-md flex-center text-capital padding-md letter-space-sm margin-top-md'>
+            <button
+                class='btn-outlined txt-primary txt-md txt-cap bg-primary b-solid b-secondary flx flx-center pd-xs mg-top-xs'>
                 create new account
                 <span class='material-icons'>
                     chevron_right
                 </span>
             </button>
         </section>
-    
+
     </main>
 </body>
+
 </html>

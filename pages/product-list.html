@@ -14,10 +14,12 @@
 
 <body>
 
+    <!-- page header -->
+
     <header id="pg-header" class="flx flx-maj-even flx-min-center bg-primary pd-top-md pd-btm-md">
         <p class="txt-lg txt-primary txt-ucase">sneakerstore</p>
         <div id="pg-searchbar" class="flx bg-primary">
-            <input id="input-search" type="text" placeholder="Search" class="input input-s pd-xs" />
+            <input id="input-search" type="text" placeholder="Search" class="input input-s txt-md pd-xs" />
             <span id="btn-search" class="material-icons icon-primary pd-xs">
                 search
             </span>
@@ -37,18 +39,26 @@
 
     <div class="flx flx-row">
 
+        <!-- filters menu -->
+
         <aside class="aside-filters bg-primary pos-sticky t-0 z-5 dis-hidden pd-s">
+
+            <!-- reset filters button -->
+
             <div class='flx flx-maj-end'>
                 <button class='btn-txt txt-md txt-lcase txt-primary bg-primary pd-xs'>
                     reset
                 </button>
             </div>
 
+            <!-- price filter group -->
+
             <div class='mg-btm-lg'>
                 <p class='txt txt-cap mg-btm-xs'>price</p>
                 <input id="filter-price" type='range' min='10000' max='50000' value='20000' />
                 <p id="filter-priceval" class="txt-md txt-primary">20000</p>
             </div>
+
 
             <div class='mg-btm-lg'>
                 <p class='txt-md txt-cap mg-btm-xs'>
@@ -64,9 +74,11 @@
                 </div>
             </div>
 
+            <!-- gender filter group -->
+
             <div class='mg-btm-lg flx flx-column'>
                 <p class='txt-md txt-cap mg-btm-xs'>
-                    sort by price
+                    gender
                 </p>
                 <div class='flx flx-min-center'>
                     <input type='radio' id='gender-m' name="gender-grp" class='mg-right-xs' />
@@ -77,6 +89,8 @@
                     <label for='gender-f' class='txt-cap'>women</label>
                 </div>
             </div>
+
+            <!-- brands filter group -->
 
             <div class='mg-btm-lg'>
                 <p class='txt-md txt-cap mg-btm-xs'>
@@ -111,6 +125,8 @@
                     <label for='vans-category' class='txt-cap'>vans</label>
                 </div>
             </div>
+
+            <!-- size filter group -->
 
             <div class='mg-btm-lg'>
                 <p class='txt-md txt-cap mg-btm-xs'>size</p>
@@ -150,6 +166,8 @@
                 </div>
             </div>
 
+            <!-- rating filter group -->
+
             <div class='mg-btm-lg'>
                 <p class='txt-md txt-cap mg-btm-xs'>rating</p>
                 <div class='flx flx-min-center'>
@@ -172,11 +190,15 @@
 
         </aside>
 
+        <!-- filter toggle button -->
+
         <button id="btn-filters" class="btn-solid bg-secondary flx flx-center pd-xs pos-sticky t-0">
             <span class="material-icons icon-secondary">
                 filter_alt
             </span>
         </button>
+
+        <!-- main products grid -->
 
         <main id="main-prdlist" class="bg-primary flx flx-column flx-min-center">
             <p class="txt-lg txt-cap txt-primary pd-top-lg pd-btm-lg">sneakers</p>
