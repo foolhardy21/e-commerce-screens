@@ -12,14 +12,14 @@
     <title>Product Page</title>
 </head>
 
-<body>
+<body class="bg-primary">
 
     <!-- page header -->
 
     <header id="pg-header" class="flx flx-maj-even flx-min-center bg-primary pd-top-md pd-btm-md">
         <p class="txt-lg txt-primary txt-ucase">sneakerstore</p>
         <div id="pg-searchbar" class="flx bg-primary">
-            <input id="input-search" type="text" placeholder="Search" class="input input-s txt-md pd-xs" />
+            <input id="input-search" type="text" placeholder="Search" class="input input-s bg-primary txt-md pd-xs" />
             <span id="btn-search" class="material-icons icon-primary pd-xs">
                 search
             </span>
@@ -37,11 +37,15 @@
         </nav>
     </header>
 
+    <span id="btn-theme" class="material-icons pos-absolute tr-1 icon-primary pd-s">
+        bedtime
+    </span>
+
     <div class="flx flx-row">
 
         <!-- filters menu -->
 
-        <aside class="aside-filters bg-primary pos-sticky t-0 z-5 dis-hidden pd-s">
+        <aside class="aside-filters txt-primary bg-primary pos-sticky t-0 z-5 dis-hidden pd-s">
 
             <!-- reset filters button -->
 
@@ -430,5 +434,6 @@
 
 </body>
 <script src="../scripts/products-script.js"></script>
+<script src="../scripts/theme-script.js"></script>
 
 </html>

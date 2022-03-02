@@ -12,7 +12,7 @@
     <title>Cart Page</title>
 </head>
 
-<body>
+<body class="bg-primary">
 
     <header id="pg-header" class='flx flx-maj-even flx-min-center pd-top-md pd-btm-md'>
         <span class="txt-ucase txt-primary txt-lg">
@@ -34,6 +34,10 @@
             </button>
         </nav>
     </header>
+
+    <span id="btn-theme" class="material-icons pos-absolute tr-1 icon-primary pd-s">
+        bedtime
+    </span>
 
     <main class='flx flx-column flx-center pd-md'>
 
@@ -59,9 +63,11 @@
                         <div class='flx flx-maj-start flx-min-center'>
                             <p class='txt-md txt-cap txt-primary'>
                                 quantity: </p>
-                            <button class='btn-outlined b-solid b-secondary pd-xs txt-md'>-</button>
-                            <input type='number' class='txt-md input input-s' placeholder='1' />
-                            <button class='btn-outlined b-solid b-secondary pd-xs txt-md'>+</button>
+                            <button
+                                class='btn-outlined b-solid b-secondary pd-xs txt-md txt-primary bg-primary'>-</button>
+                            <input type='number' class='txt-md input input-s bg-primary' placeholder='1' />
+                            <button
+                                class='btn-outlined b-solid b-secondary pd-xs txt-md txt-primary bg-primary'>+</button>
                         </div>
                         <footer class="flx flx-column">
                             <button class='btn-outlined b-solid b-secondary bg-primary txt-primary txt-cap pd-xs'>remove
@@ -88,9 +94,11 @@
                         <div class='flx flx-maj-start flx-min-center'>
                             <p class='txt-md txt-cap txt-primary'>
                                 quantity: </p>
-                            <button class='btn-outlined b-solid b-secondary pd-xs txt-md'>-</button>
-                            <input type='number' class='txt-md input input-s' placeholder='1' />
-                            <button class='btn-outlined b-solid b-secondary pd-xs txt-md'>+</button>
+                            <button
+                                class='btn-outlined b-solid b-secondary pd-xs txt-md txt-primary bg-primary'>-</button>
+                            <input type='number' class='txt-md input input-s bg-primary' placeholder='1' />
+                            <button
+                                class='btn-outlined b-solid b-secondary pd-xs txt-md txt-primary bg-primary'>+</button>
                         </div>
                         <footer class="flx flx-column">
                             <button class='btn-outlined b-solid b-secondary bg-primary txt-primary txt-cap pd-xs'>remove
@@ -135,5 +143,6 @@
     </main>
 </body>
 <script src="../scripts/cart-script.js"></script>
+<script src="../scripts/theme-script.js"></script>
 
 </html>
