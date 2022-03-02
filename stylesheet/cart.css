@@ -1,6 +1,5 @@
 .grid {
-    justify-content: center;
-    justify-items: center;
+    gap: 1rem;
 }
 
 .grid-itm2 {

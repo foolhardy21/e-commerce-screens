@@ -1,150 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
-    <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css' />
-    <link rel='stylesheet' href='../style.css' />
+    <link rel='stylesheet' href='https://deploy-preview-11--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel='stylesheet' href='../stylesheet/cart.css' />
+    <link rel='stylesheet' href='../stylesheet/style.css' />
     <title>Wishlist Page</title>
 </head>
-<body>
-    
-    <header class='page-header flex-horizontal-stretch flex-vertical-center padding-xxlg'>
 
-        <span class="text-uppercase c-white letter-space-md font-size-lg">
+<body>
+
+    <header id="pg-header" class='flx flx-maj-even flx-min-center pd-top-md pd-btm-md'>
+        <span class="txt-ucase txt-primary txt-lg">
             sneakerstore
         </span>
-        
-        <div class='search-bar flex-horizontal-start flex-vertical-center'>
-            <span class='material-icons c-darkgray'>
+        <div id="pg-searchbar" class="flx bg-primary">
+            <input id="input-search" type="text" placeholder="Search" class="input input-s txt-md pd-xs" />
+            <span id="btn-search" class="material-icons icon-primary pd-xs">
                 search
             </span>
-            <input type='text' class="padding-md no-outline no-border c-black" placeholder='Search' />
         </div>
-        
-        <nav class='flex-vertical-center'>
-            <button class='btn-text container-transparent no-border text-capital letter-space-md c-blue padding-sm font-size-md margin-right-xxlg'>
-                logout
-            </button>
-            <span class='material-icons card-icon c-white margin-right-xxlg'>
+        <nav class='flx flx-min-center'>
+            <span class='material-icons icon-primary mg-right-s'>
                 favorite
             </span>
-            <span class='material-icons margin-right-xxlg card-icon c-white'>
+            <span class='material-icons icon-primary mg-right-s'>
                 shopping_cart
             </span>
+            <button class='btn-txt txt-cap txt-primary bg-primary pd-xs txt-md'>
+                logout
+            </button>
         </nav>
-
     </header>
-    
-    <main class='flex-column flex-center padding-xxlg'>
-        
-        <p class='font-size-xlg c-black text-capital margin-btm-xlg'>
+
+    <main class='flx flx-column flx-center pd-md'>
+
+        <p class='txt-lg txt-primary txt-cap mg-btm-md'>
             your cabinet
         </p>
-        
-        <section id="wishlist-wrapper" class='grid grid-maxcols-4'>
-            <article class='card-wrapper-wishlist-wishlist card-shadow-sm pos-relative margin-top-md margin-horizontal-xxlg' >
-                <span class='material-icons pos-absolute top-right-1 card-icon c-red'>
+
+        <section class='grid grid-maxcols-4'>
+            <article class='card-dim flx flx-column card-shadow-xs pos-relative'>
+                <span class='material-icons pos-absolute tr-1 icon-primary'>
                     close
                 </span>
-                <div class='badge-size-lg text-uppercase badge-text-sm flex-center padding-md badge-yellow text-bold letter-space-md pos-absolute top-left-0'>
+                <div class='txt-ucase txt-md flx flx-center bg-warn pd-xs pos-absolute tl-0'>
                     offer
                 </div>
                 <main>
-                    <img src='../assets/air-jordan-5-retro-shoes.jfif' class='card-image-wishlist' />
-                    <header class='padding-xxlg flex-column flex-center'>
-                        <p class='font-size-md text-uppercase letter-space-md c-black'>
+                    <img srcset='../assets/1-m.jpg 200w,
+                    ../assets/1-s.jpg 150w' sizes="(max-width: 768px) 150px, 200px" />
+                    <header class='flx flx-column flx-center'>
+                        <p class='txt-md txt-ucase txt-primary'>
                             nike
                         </p>
-                        <p class='font-size-md text-capital letter-space-md c-darkgray'>
+                        <p class='txt-md txt-cap txt-primary mg-btm-s'>
                             air jordan 5
                         </p>
-                        <p class='margin-0 margin-top-sm letter-space-sm font-capital c-darkgray font-size-sm'>
+                        <p class='txt-md txt-ucase txt-primary'>
                             Rs. 20,000
-                            <span class="letter-space-sm font-capital c-green font-size-sm">
+                            <span class="txt-md txt-ucase txt-success">
                                 20% off
                             </span>
                         </p>
                     </header>
                 </main>
-                <button class='add-btn btn-filled c-white no-border font-size-md text-capital padding-xxlg'>
+                <button class='btn-solid txt-secondary bg-secondary txt-md txt-cap pd-xs mg-top-s'>
                     move to cart
                 </button>
             </article>
 
-            <article class='card-wrapper-wishlist card-shadow-sm pos-relative margin-top-md margin-horizontal-xxlg' >
-                <span class='material-icons pos-absolute top-right-1 card-icon c-red'>
+            <article class='card-dim flx flx-column card-shadow-xs pos-relative'>
+                <span class='material-icons pos-absolute tr-1 icon-primary'>
                     close
                 </span>
                 <main>
-                    <img src='../assets/connor-houtman-0_aAhxoXOSo-unsplash.jpg' class='card-image-wishlist' />
-                    <header class='padding-xxlg flex-column flex-center'>
-                        <p class='font-size-md text-uppercase letter-space-md c-black'>
-                            adidas
+                    <img srcset='../assets/1-m.jpg 200w,
+                    ../assets/1-s.jpg 150w' sizes="(max-width: 768px) 150px, 200px" />
+                    <header class='flx flx-column flx-center'>
+                        <p class='txt-md txt-ucase txt-primary'>
+                            nike
                         </p>
-                        <p class='font-size-md text-capital letter-space-md c-darkgray'>
-                            yeezy boost 350
+                        <p class='txt-md txt-cap txt-primary mg-btm-s'>
+                            air jordan 5
                         </p>
-                        <p class='margin-0 margin-top-sm letter-space-sm font-capital c-darkgray font-size-sm'>
-                            Rs. 30,000
+                        <p class='txt-md txt-ucase txt-primary'>
+                            Rs. 20,000
                         </p>
                     </header>
                 </main>
-                <button class='add-btn btn-filled c-white no-border font-size-md text-capital padding-xxlg'>
+                <button class='btn-solid txt-secondary bg-secondary txt-md txt-cap pd-xs mg-top-s'>
                     move to cart
                 </button>
             </article>
 
-            <article class='card-wrapper-wishlist card-shadow-sm pos-relative margin-top-md margin-horizontal-xxlg' >
-                <span class='material-icons pos-absolute top-right-1 card-icon c-red'>
+            <article class='card-dim flx flx-column card-shadow-xs pos-relative'>
+                <span class='material-icons pos-absolute tr-1 icon-primary'>
                     close
                 </span>
                 <main>
-                    <img src='../assets/kris-gerhard-0BKZfcamvGg-unsplash.jpg' class='card-image-wishlist' />
-                    <header class='padding-xxlg flex-column flex-center'>
-                        <p class='font-size-md text-uppercase letter-space-md c-black'>
-                            converse
+                    <img srcset='../assets/1-m.jpg 200w,
+                    ../assets/1-s.jpg 150w' sizes="(max-width: 768px) 150px, 200px" />
+                    <header class='flx flx-column flx-center'>
+                        <p class='txt-md txt-ucase txt-primary'>
+                            nike
                         </p>
-                        <p class='font-size-md text-capital letter-space-md c-darkgray'>
-                            all star high tops
+                        <p class='txt-md txt-cap txt-primary mg-btm-s'>
+                            air jordan 5
                         </p>
-                        <p class='margin-0 margin-top-sm letter-space-sm font-capital c-darkgray font-size-sm'>
-                            Rs. 7,000
+                        <p class='txt-md txt-ucase txt-primary'>
+                            Rs. 20,000
                         </p>
                     </header>
                 </main>
-                <button class='add-btn btn-filled c-white no-border c-white no-border font-size-md text-capital padding-xxlg'>
+                <button class='btn-solid txt-secondary bg-secondary txt-md txt-cap pd-xs mg-top-s'>
                     move to cart
                 </button>
             </article>
 
-            <article class='card-wrapper-wishlist card-shadow-sm pos-relative margin-top-md margin-horizontal-xxlg' >
-                <span class='material-icons pos-absolute top-right-1 card-icon c-red'>
+            <article class='card-dim flx flx-column card-shadow-xs pos-relative'>
+                <span class='material-icons pos-absolute tr-1 icon-primary'>
                     close
                 </span>
-                <div class='badge-size-lg text-uppercase badge-text-sm flex-center padding-md badge-yellow text-bold letter-space-md pos-absolute top-left-0'>
+                <div class='txt-ucase txt-md flx flx-center bg-warn pd-xs pos-absolute tl-0'>
                     offer
                 </div>
                 <main>
-                    <img src='../assets/ryan-plomp-76w_eDO1u1E-unsplash.jpg' class='card-image-wishlist border-top-radius-sm' />
-                    <header class='padding-xxlg flex-column flex-center'>
-                        <p class='font-size-md text-uppercase letter-space-md c-black'>
+                    <img srcset='../assets/1-m.jpg 200w,
+                    ../assets/1-s.jpg 150w' sizes="(max-width: 768px) 150px, 200px" />
+                    <header class='flx flx-column flx-center'>
+                        <p class='txt-md txt-ucase txt-primary'>
                             nike
                         </p>
-                        <p class='font-size-md text-capital letter-space-md c-darkgray'>
-                            air jordan 1
+                        <p class='txt-md txt-cap txt-primary mg-btm-s'>
+                            air jordan 5
                         </p>
-                        <p class='margin-0 margin-top-sm letter-space-sm font-capital c-darkgray font-size-sm'>
-                            Rs. 35,000
-                            <span class="letter-space-sm font-capital c-green font-size-sm">
+                        <p class='txt-md txt-ucase txt-primary'>
+                            Rs. 20,000
+                            <span class="txt-md txt-ucase txt-success">
                                 20% off
                             </span>
                         </p>
                     </header>
                 </main>
-                <button class='add-btn btn-filled c-white no-border font-size-md text-capital padding-xxlg'>
+                <button class='btn-solid txt-secondary bg-secondary txt-md txt-cap pd-xs mg-top-s'>
                     move to cart
                 </button>
             </article>
@@ -152,4 +155,5 @@
         </section>
     </main>
 </body>
+
 </html>
