@@ -1,82 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
-    <link rel="stylesheet" href="https://festive-mestorf-acecb0.netlify.app/style.css" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://deploy-preview-11--festive-mestorf-acecb0.netlify.app/stylesheet/style.css" />
+    <link rel="stylesheet" href="../stylesheet/home.css" />
+    <link rel="stylesheet" href="../stylesheet/style.css" />
     <title>Home page</title>
 </head>
+
 <body>
 
-    <header class='page-header flex-horizontal-stretch flex-vertical-center padding-xxlg'>
-
-        <span class="text-uppercase margin-left-md c-white letter-space-md font-size-lg">
+    <header id="pg-header" class='flx flx-maj-even flx-min-center pd-top-md pd-btm-md'>
+        <span class="txt-ucase txt-primary txt-lg">
             sneakerstore
         </span>
-
-        <div class='search-bar flex-horizontal-start flex-vertical-center'>
-            <span class='material-icons c-darkgray'>
-                search
-            </span>
-            <input type='text' class="padding-md no-outline no-border c-black" placeholder='Search' />
-        </div>
-
-        <nav class='flex-vertical-center margin-right-xxlg'>
-            <button class='btn-filled no-border text-capital letter-space-md c-white padding-md font-size-md margin-right-xxlg'>
-                login
-            </button>
-            <span class='material-icons card-icon c-white margin-right-xxlg'>
+        <nav class='flx flx-min-center'>
+            <span class='material-icons icon-primary mg-right-s'>
                 favorite
             </span>
-            <span class='material-icons margin-right-xxlg card-icon c-white'>
+            <span class='material-icons icon-primary mg-right-s'>
                 shopping_cart
             </span>
+            <button class='btn-solid txt-ucase txt-secondary bg-secondary pd-xs txt-md mg-right-s'>
+                login
+            </button>
         </nav>
-
     </header>
 
-    <img class="hero-img" src="../assets/edgar-chaparro-Lh-CTP558tc-unsplash.jpg" alt='a shoe rack display' />
-    
-    <p class="font-size-xlg text-uppercase text-bold c-black letter-space-lg flex-center padding-lg">
-        sneaker store
+    <img srcset="../assets/hero-m.jpg 1280w,
+    ../assets/hero-s.jpg 720w" sizes="(max-width: 768px) 720px, 1280px" alt='a shoe rack display'
+        class="img-hero img-fit-cover" />
+
+    <p class="txt-lg txt-ucase txt-primary flx flx-center mg-top-md mg-btm-md">
+        brands
     </p>
 
-    <section class="brands-wrapper grid grid-maxcols-4 margin-btm-md margin-top-xlg">
-    
-        <article class="brand-card pos-relative">
-            <img src="../assets/adi.jpg" class='card-image' alt='adidas logo'/>
-            <p class="pos-absolute top-right-1 c-black font-size-md">adidas</p>
+    <section class="grid grid-maxcols-4">
+        <article class="card-dim pos-relative">
+            <img srcset="../assets/adi-m.jpg 250w,
+            ../assets/adi-s.jpg 150w" sizes="(max-width: 768px) 250px, 150px" alt='adidas logo' />
+            <p class="pos-absolute tr-1 txt-primary bg-primary txt-md">adidas</p>
         </article>
 
-        <article class="brand-card pos-relative">
-            <img src="../assets/air-j.jpg" class='card-image' alt='air jordan logo'/>
-            <p class="pos-absolute top-right-1 c-white font-size-md">air jordan</p>
+        <article class="card-dim pos-relative">
+            <img srcset="../assets/airj-m.jpg 250w,
+            ../assets/airj-s.jpg 150w" sizes="(max-width: 768px) 250px, 150px" alt='air jordan logo' />
+            <p class="pos-absolute tr-1 txt-primary bg-primary txt-md">air jordan</p>
         </article>
-        
-        <article class="brand-card pos-relative">
-            <img src="../assets/converse.jpg" class='card-image' alt='converse logo' />
-            <p class="pos-absolute top-right-1 c-white font-size-md">converse</p>
+
+        <article class="card-dim pos-relative">
+            <img srcset="../assets/nb-m.jpg 250w,
+            ../assets/nb-s.jpg 150w" sizes="(max-width: 768px) 250px, 150px" alt='new balance logo' />
+            <p class="pos-absolute tr-1 txt-primary bg-primary txt-md">new balance</p>
         </article>
-        
-        <article class="brand-card pos-relative">
-            <img src="../assets/nb.jpg" class='card-image' alt='new balance logo' />
-            <p class="pos-absolute top-right-1 c-white font-size-md">new balance</p>
+
+        <article class="card-dim pos-relative">
+            <img srcset="../assets/puma-m.jpg 250w,
+            ../assets/puma-s.jpg 150w" sizes="(max-width: 768px) 250px, 150px" alt='nike logo' />
+            <p class="pos-absolute tr-1 txt-primary bg-primary txt-md">puma</p>
         </article>
-        
-        <article class="brand-card pos-relative">
-            <img src="../assets/nike.jpg" class='card-image' alt='nike logo' />
-            <p class="pos-absolute top-right-1 c-black font-size-md">nike</p>
-        </article>
-        
-        <article class="brand-card pos-relative"> 
-            <img src="../assets/puma.jpg" class='card-image' alt='puma logo' />
-            <p class="pos-absolute top-right-1 c-white font-size-md">puma</p>
-        </article>
-    
     </section>
-    
+
+    <p class="txt-lg txt-ucase txt-primary flx flx-center mg-top-xlg mg-btm-md">
+        new arrivals
+    </p>
+
+    <section class="grid grid-maxcols-4">
+        <article class="card-dim pos-relative">
+            <img srcset="../assets/1-m.jpg 200w,
+            ../assets/1-s.jpg 150w" sizes="(max-width: 768px) 150px, 200px" alt='newly arrived shoe' />
+            <p class="pos-absolute tr-1 txt-primary bg-primary txt-md">blue racer</p>
+        </article>
+
+        <article class="card-dim pos-relative">
+            <img srcset="../assets/1-m.jpg 200w,
+            ../assets/1-s.jpg 150w" sizes="(max-width: 768px) 150px, 200px" alt='newly arrived shoe' />
+            <p class="pos-absolute tr-1 txt-primary bg-primary txt-md">blue racer</p>
+        </article>
+
+        <article class="card-dim pos-relative">
+            <img srcset="../assets/1-m.jpg 200w,
+            ../assets/1-s.jpg 150w" sizes="(max-width: 768px) 150px, 200px" alt='newly arrived shoe' />
+            <p class="pos-absolute tr-1 txt-primary bg-primary txt-md">blue racer</p>
+        </article>
+
+        <article class="card-dim pos-relative">
+            <img srcset="../assets/1-m.jpg 200w,
+            ../assets/1-s.jpg 150w" sizes="(max-width: 768px) 150px, 200px" alt='newly arrived shoe' />
+            <p class="pos-absolute tr-1 txt-primary bg-primary txt-md">blue racer</p>
+        </article>
+    </section>
+
 </body>
+
 </html>
