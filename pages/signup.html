@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
+    <link rel='stylesheet' href='https://deploy-preview-11--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel='stylesheet' href='../../stylesheet/style.css' />
+    <title>Signup Page</title>
+</head>
+
+<body class="bg-primary">
+
+    <header id="pg-header" class='flx flx-maj-even flx-min-center pd-top-md pd-btm-md'>
+        <span class="txt-ucase txt-primary txt-lg">
+            sneakerstore
+        </span>
+        <nav class='flx flx-min-center'>
+            <span class="material-icons icon-primary mg-right-s">
+                person
+            </span>
+            <span class="material-icons icon-primary mg-right-s">
+                favorite
+            </span>
+            <span class="material-icons icon-primary">
+                shopping_cart
+            </span>
+        </nav>
+    </header>
+
+    <span id="btn-theme" class="material-icons pos-absolute tr-1 icon-primary pd-s">
+        bedtime
+    </span>
+
+    <main class='flx flx-center'>
+
+        <section class='card-shadow-xs flx flx-column flx-center pd-lg mg-top-lg'>
+            <p class='txt-cap txt-lg'>
+                signup
+            </p>
+            <form class='auth-form flx flx-column txt-primary mg-left-xlg mg-right-xlg'>
+                <input type='email' id='email-input' placeholder="email" class="input input-lg txt-md pd-xs mg-top-s" />
+                <input type='text' id='fname-input' placeholder="first name"
+                    class="input input-lg txt-md pd-xs mg-top-s" />
+                <input type='text' id='lname-input' placeholder="last name"
+                    class="input input-lg txt-md pd-xs mg-top-s" />
+                <input type='password' id='pass-input' placeholder="password"
+                    class="input input-lg txt-md pd-xs mg-top-s" />
+                <input type='password' id='cpass-input' placeholder="confirm password"
+                    class="input input-lg txt-md pd-xs mg-top-s" />
+                <div class='flx flx-maj-end flx-min-center mg-btm-xs'>
+                    <input type='checkbox' id='toggle-pass' />
+                    <label for='toggle-pass' class='txt-cap mg-left-xs txt-md txt-primary'>
+                        show password
+                    </label>
+                </div>
+                <div class='flx flx-maj-start flx-min-center mg-btm-s'>
+                    <input type='checkbox' id='terms-check' />
+                    <label for='terms-check' class='txt-md txt-cap mg-left-xs'>
+                        i accept all terms & conditions
+                    </label>
+                </div>
+                <button class='btn-solid txt-secondary bg-secondary txt-md txt-ucase pd-xs'>
+                    sign up
+                </button>
+            </form>
+            <button class='btn-outlined txt-primary txt-md b-solid b-secondary flx flx-center txt-cap pd-xs mg-top-xs'>
+                already have an account
+                <span class='material-icons'>
+                    chevron_right
+                </span>
+            </button>
+        </section>
+
+    </main>
+</body>
+<script src="../scripts/auth-script.js"></script>
+<script src="../scripts/theme-script.js"></script>
+
+</html>
